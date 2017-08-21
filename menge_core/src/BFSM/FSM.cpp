@@ -215,10 +215,10 @@ namespace Menge {
 			
 			Vector2 pos = agent->_pos;
 			//In radians to represent a 220 degree scan with 1/3 degree increment for a total of 660 ray scans
-			float start_angle = -1.91986; 
-			float end_angle = 1.918;
-			float increment = 0.005817;
-			float range_max = 25; 
+			float start_angle = agent->_start_angle; 
+			float end_angle = agent->_end_angle;
+			float increment = agent->_increment;
+			float range_max = agent->_range_max; 
 			//In meters 
 			/* 
 			for(int i = 0;i < 660;i++){
